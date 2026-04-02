@@ -1,11 +1,12 @@
 :root {
-  --bg: #f8fafc;
+  --bg: #f5f7fb;
   --surface: #ffffff;
+  --secondary: #e8edf5;
   --text: #0f172a;
   --muted: #475569;
-  --primary: #2563eb;
-  --primary-dark: #1d4ed8;
-  --border: #dbe2ea;
+  --primary: #2d5bff;
+  --primary-dark: #1e46d9;
+  --border: #d6dde8;
 }
 
 * {
@@ -27,6 +28,7 @@ body {
 
 .site-header {
   background: var(--surface);
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.04);
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
@@ -61,7 +63,7 @@ body {
 
 .site-nav a:hover,
 .site-nav a.active {
-  background: #e2e8f0;
+  background: var(--secondary);
   color: var(--text);
 }
 
@@ -73,6 +75,10 @@ body {
   padding: 0.3rem 0.55rem;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.menu-toggle:hover {
+  background: var(--secondary);
 }
 
 .hero {
@@ -95,11 +101,11 @@ body {
 }
 
 .button-secondary {
-  background: #0f172a;
+  background: #334155;
 }
 
 .button-secondary:hover {
-  background: #1e293b;
+  background: #1f2937;
 }
 .hero h1 {
   font-size: clamp(2rem, 4vw, 3rem);
@@ -132,7 +138,7 @@ body {
 }
 
 .card {
-  background: var(--surface);
+  background: linear-gradient(180deg, var(--surface) 0%, #fbfcff 100%);
   padding: 1.2rem;
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -168,7 +174,7 @@ body {
 
 .site-footer {
   border-top: 1px solid var(--border);
-  background: var(--surface);
+  background: var(--secondary);
   padding: 1rem 0;
   margin-top: auto;
 }
@@ -250,7 +256,7 @@ body {
   justify-content: center;
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: #eef2ff;
+  background: var(--secondary);
   color: #1e293b;
   text-decoration: none;
   font-size: 0.85rem;
@@ -259,6 +265,12 @@ body {
 }
 
 .social-links a:hover {
-  background: #dbeafe;
+  background: #dbe4ff;
   color: var(--primary-dark);
+}
+
+
+.social-links a i {
+  font-size: 1rem;
+  line-height: 1;
 }
