@@ -181,6 +181,12 @@ body {
   background: var(--primary-dark);
 }
 
+.project-button {
+  margin-top: 0.8rem;
+  padding: 0.55rem 0.95rem;
+  font-size: 0.95rem;
+}
+
 .highlights,
 .project-grid {
   display: grid;
